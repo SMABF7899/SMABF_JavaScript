@@ -55,8 +55,43 @@ function changeText() {
   //alert(x)
 
   var x1 = prompt("Enter number : ")
-  if (x1 > 10)
-    alert("عددت از ۱۰ بزرگتره")
-  else
-    alert("عددت از ۱۰ کوچیک تره")
+  // if (x1 > 10)
+  //   alert("عددت از ۱۰ بزرگتره")
+  // else
+  //   alert("عددت از ۱۰ کوچیک تره")
+
+  // if (x1 >= 17)
+  //   alert("Very Good")
+  // else if (x1 < 17 && x1 >= 15)
+  //   alert("Good")
+  // else if (x1 < 15 && x1 >= 12)
+  //   alert("Not bat")
+  // else
+  //   alert("Bad")
+
+  switch (x1) {
+    case "1" :
+      alert("Saturday");
+      break;
+    case "2" :
+      alert("Sunday");
+      break;
+    case "3" :
+      alert("Monday");
+      break;
+    case "4" :
+      alert("Tuesday");
+      break;
+    case "5" :
+      alert("Wednesday");
+      break;
+    case "6" :
+      alert("Thursday");
+      break;
+    case "7" :
+      alert("Friday");
+      break;
+    default :
+      alert("داداش چند چندی ؟؟")
+  }
 }
