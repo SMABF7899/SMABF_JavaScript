@@ -54,7 +54,7 @@ function changeText() {
   var x = num1 > 50 ? 2 : 3;
   //alert(x)
 
-  var x1 = prompt("Enter number : ")
+  //var x1 = prompt("Enter number : ")
   // if (x1 > 10)
   //   alert("عددت از ۱۰ بزرگتره")
   // else
@@ -69,29 +69,46 @@ function changeText() {
   // else
   //   alert("Bad")
 
-  switch (x1) {
-    case "1" :
-      alert("Saturday");
-      break;
-    case "2" :
-      alert("Sunday");
-      break;
-    case "3" :
-      alert("Monday");
-      break;
-    case "4" :
-      alert("Tuesday");
-      break;
-    case "5" :
-      alert("Wednesday");
-      break;
-    case "6" :
-      alert("Thursday");
-      break;
-    case "7" :
-      alert("Friday");
-      break;
-    default :
-      alert("داداش چند چندی ؟؟")
+  // switch (x1) {
+  //   case "1" :
+  //     alert("Saturday");
+  //     break;
+  //   case "2" :
+  //     alert("Sunday");
+  //     break;
+  //   case "3" :
+  //     alert("Monday");
+  //     break;
+  //   case "4" :
+  //     alert("Tuesday");
+  //     break;
+  //   case "5" :
+  //     alert("Wednesday");
+  //     break;
+  //   case "6" :
+  //     alert("Thursday");
+  //     break;
+  //   case "7" :
+  //     alert("Friday");
+  //     break;
+  //   default :
+  //     alert("داداش چند چندی ؟؟")
+  // }
+}
+
+function  getNumber() {
+  var n1 = parseInt(prompt("First Number : "))
+  var n2 = eval(prompt("Second Number : "))
+  var op = prompt("Operator : ")
+  var result = calc(n1, n2, op)
+  alert(result)
+}
+
+function calc (num1, num2, operator) {
+  switch (operator) {
+    case "+" : return (num1 + num2)
+    case "-" : return (num1 - num2)
+    case "*" : return (num1 * num2)
+    case "/" : return (num1 / num2)
   }
 }
