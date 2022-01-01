@@ -112,3 +112,9 @@ function calc (num1, num2, operator) {
     case "/" : return (num1 / num2)
   }
 }
+
+function printNumbers(min, max) {
+  for (var i = min; i <= max; i++) {
+    document.write(i + "<br />")
+  }
+}
