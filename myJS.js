@@ -114,7 +114,53 @@ function calc (num1, num2, operator) {
 }
 
 function printNumbers(min, max) {
-  for (var i = min; i <= max; i++) {
-    document.write(i + "<br />")
+  // for (var i = min; i <= max; i++) {
+  //   document.write(i + "<br />")
+  // }
+  var i = min;
+  while (i <= max) {
+    document.write(i + "<br />");
+    i += 2;
+    console.log(i)
   }
+}
+var names = ["Ali", "Mohammad", "Hassan", "Javad"]
+for (var i = 0; i < names.length; i++) {
+  document.write(names[i] + "<br />")
+}
+
+function f1() {
+  var input = prompt("Enter a number :")
+  var sum = 0;
+  while (input!=="*") {
+    sum += eval(input);
+    input = prompt("Enter a number")
+  }
+  alert(sum)
+}
+function f2() {
+  var i = 1;
+  do {
+    alert(i)
+    i += 1;
+  }while (i < 3)
+}
+
+function mySearch(name) {
+  for (var i = 0; i < names.length; i++) {
+    if (names[i] === name) {
+      continue
+    } else
+      alert(names[i] + " is in " + i)
+  }
+}
+
+function myObject() {
+  var text = ""
+  var person = {firstName : "Seyed Mohammad Ali" , lastName : "Bani Fatemi" , age : 22 , Birthday : "1999/10/10"}
+  for (var i in person) {
+    text += person[i]
+    text += " "
+  }
+  alert(text)
 }
