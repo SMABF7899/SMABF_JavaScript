@@ -199,4 +199,10 @@ function txt2_mouseover(element) {
 
 function txt2_mouseout(element) {
   element.value = ""
+  try {
+    alertt("SSSSSSSS")
+  } catch (e1) {
+    console.log("خطا در ارسال اطلاعات به گمرک مقصد")
+    console.log("System message : " + e1.message)
+  }
 }
