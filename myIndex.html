@@ -7,7 +7,15 @@
   <body onload="//printNumbers(eval(prompt('Min : ')), eval(prompt('Max : ')))
 //f2()
 //mySearch('Ali')
-myObject()">
+//myObject()
+page_load()" ondblclick="alert('Hello')" oncontextmenu="event.preventDefault()">
+  <form method="get" action="myIndex.html" onsubmit="txt1_blur()">
+    <input type="text" id="txt1" onblur="txt1_blur()" onkeyup="txt1_keyup(event)" onkeydown="txt1_keydown(event)"/>
+    <input type="text" id="txt2" onfocus="txt2_focus()" onmouseover="txt2_mouseover(this)" onmouseout="txt2_mouseout(this)"/>
+    <input type="submit" />
+  </form>
+  <br />
+  <span id="counter">0</span>
     <p id="message">
       Hello
     </p>

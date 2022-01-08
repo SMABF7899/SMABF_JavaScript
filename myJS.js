@@ -94,6 +94,7 @@ function changeText() {
   //   default :
   //     alert("داداش چند چندی ؟؟")
   // }
+  document.getElementById("message").innerHTML = "hello world!";
 }
 
 function  getNumber() {
@@ -163,4 +164,39 @@ function myObject() {
     text += " "
   }
   alert(text)
+}
+function page_load() {
+  let x = document.getElementById("message");
+  document.getElementById("message").innerHTML = "hello world!"
+  x.style.color="red";
+
+}
+function txt2_focus() {
+  alert("I'm in")
+}
+function txt1_blur() {
+  alert("I'm Out")
+}
+
+function txt1_keyup(event) {
+  if (event.keyCode !== 8 && event.keyCode !== 13)
+    document.getElementById("counter").innerHTML = eval(document.getElementById("counter").innerHTML) + 1;
+  else if (eval(document.getElementById("counter").innerHTML) !== 0 && event.keyCode === 8)
+    document.getElementById("counter").innerHTML = eval(document.getElementById("counter").innerHTML) - 1;
+  else if (event.keyCode === 13)
+    document.getElementById("txt2").focus()
+}
+
+function txt1_keydown(event) {
+  if (event.keyCode === 56)
+    event.preventDefault()
+}
+
+function txt2_mouseover(element) {
+  element.value = "mouseover"
+  document.getElementById("txt1").value = "Banu"
+}
+
+function txt2_mouseout(element) {
+  element.value = ""
 }
