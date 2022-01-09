@@ -31,3 +31,19 @@ var person1 = new employee("Ahmad Ahmadi", "programmer", 1990)
 employee.prototype.salary = null
 person1.salary = "200000000"
 //alert(person1.salary)
+
+var date = new Date();
+//var date = new Date(7777777)
+//var date = new Date('2010/01/05')
+//var date = new Date(2012, 3, 21, 12, 24, 26, 765)
+//alert(date.getDate())
+//alert(date.getFullYear())
+//alert(date.getMilliseconds())
+//alert(date.getMinutes())
+//alert(date.getMonth())
+//alert(date.getSeconds())
+//alert(date.getTime())
+//alert(Date.parse('March 21, 2012'))
+//date.setTime(-787547848)
+//alert(date.toDateString())
+alert(date.toString())
