@@ -67,16 +67,41 @@ var xiaomi = [" Mi A3", "Mi A2", "Mi A2 Lite", "Note 10", "Mi 11 Lite"]
 // alert(apple.splice(0, 1, "iPhone 12 Pro", "iPhone 12 Pro Max"))
 // alert(apple)
 //alert(Math.round(2.3))
-alert(Math.floor(10 * Math.random()))
-alert(Math.floor(2.8))
-alert(Math.abs(-2.3))
-alert(Math.asin(1))
-alert(Math.ceil(2.3))
-alert(Math.sqrt(16))
-alert(Math.cos(Math.PI))
-alert(Math.exp(2))
-alert(Math.log(2))
-alert(Math.max(2, 23, 43, -1, 18, 126))
-alert(Math.min(2, 23, 43, -1, 18, 126))
-alert(Math.pow(2, 6))
-alert(Math.tan(4))
+// alert(Math.floor(10 * Math.random()))
+// alert(Math.floor(2.8))
+// alert(Math.abs(-2.3))
+// alert(Math.asin(1))
+// alert(Math.ceil(2.3))
+// alert(Math.sqrt(16))
+// alert(Math.cos(Math.PI))
+// alert(Math.exp(2))
+// alert(Math.log(2))
+// alert(Math.max(2, 23, 43, -1, 18, 126))
+// alert(Math.min(2, 23, 43, -1, 18, 126))
+// alert(Math.pow(2, 6))
+// alert(Math.tan(4))
+var pattern = /[^A-Z]/
+var myPhone = "IPHONEX!"
+alert(pattern.exec(myPhone))
+var pattern2 = /a.i/
+var txt_n = "abi 100"
+alert(pattern2.test(txt_n))
+var pattern3 = /\D/
+alert(pattern3.exec(txt_n))
+var pattern = /[^ا-ی]/
+var phone = prompt("Enter phone name :")
+if (!pattern.test(phone)) {
+  alert("Your phone is valid")
+} else {
+  alert("Your phone is not valid")
+}
+
+var n = prompt("Enter a number :")
+var pattern = /\D/
+if (!pattern.test(n))
+  alert("Yore input is true")
+else
+  alert("Your input is NaN")
+
+var pattern = /^[a-z]/
+alert(pattern.test("ali"))
