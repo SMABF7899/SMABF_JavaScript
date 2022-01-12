@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript" src="tamrin3.js"></script>
+</head>
+<body>
+  First Name <input type="text" id="firstName"/><br/>
+  Last Name <input type="text" id="lastName"/><br/>
+  <input type="button" value="Add" id="btnAdd" onclick="addPerson(this)">
+  <hr />
+  <input type="button" value="Delete" onclick="deleteSelected()">
+  <table id="tablePerson" align="center" border="1" width="300">
+    <tr>
+      <th><input type="checkbox" id="chkAll" onclick="chkAll_click(this)"></th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Operations</th>
+    </tr>
+  </table>
+</body>
+</html>
