@@ -1,4 +1,4 @@
-var car = {
+var myCar = {
     brand : 'Saipa',
     model : 'Quick',
     year : 2020,
@@ -14,12 +14,12 @@ var car = {
         return "car details : " + this.model + " , " + this.year
     }
 }
-car.name = "Saipa Quick R+"
-console.log(car)
-console.log(car["model"])
-console.log(car.brand)
-console.log(car.run())
-console.log(car.summary())
+myCar.name = "Saipa Quick R+"
+console.log(myCar)
+console.log(myCar["model"])
+console.log(myCar.brand)
+console.log(myCar.run())
+console.log(myCar.summary())
 
 var car_2 = new Object();
 car_2.name = "Tara"
@@ -31,4 +31,17 @@ var test = function () {
 
 console.log(test)
 console.log(test())
+console.log("=========================================================================================================")
+function Car(brand, model, year, speed, color) {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+    this.run = function () {
+        return "Speed up to " + speed
+    }
+}
+
+var car3 = new Car("BMW", "Series 7", 2022, 300);
+console.log(car3)
+console.log(car3 instanceof Object)
 console.log("=========================================================================================================")
