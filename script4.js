@@ -1,3 +1,4 @@
+'use strict'
 var myCar = {
     brand : 'Saipa',
     model : 'Quick',
