@@ -111,3 +111,27 @@ car5.year = 1380
 console.log(car5)
 console.log(car5.makeHappy())
 console.log("=========================================================================================================")
+var phone = {
+    brand: "Apple",
+    model: "iPhone X",
+    displayDetails: function (year, price) {
+        return "Brand : " + this.brand + " , Model : " + this.model + " , Year : " + year + " , Price : " + price
+    }
+}
+var phone2 = {
+    brand : "Apple",
+    model : "iPhone 13"
+}
+function displayDetails(year, price) {
+    return "Brand : " + this.brand + " , Model : " + this.model + " , Year : " + year + " , Price : " + price;
+}
+console.log("apply : " + displayDetails.apply(phone))
+console.log("apply : " + displayDetails.apply(phone,[2017, "700$"]))
+console.log("call : " + displayDetails.call(phone, 2017, "700$"))
+console.log("bind : " + displayDetails.bind(phone, 2017, "700$")())
+var p = displayDetails.bind(phone, 2017, "700$");
+console.log("bind : " + p())
+console.log("apply : " + phone.displayDetails.apply(phone2, [2022, "900$"]))
+console.log("call : " + phone.displayDetails.call(phone2, 2022, "900$"))
+console.log("bind : " + phone.displayDetails.bind(phone2, 2022, "900$")())
+console.log("=========================================================================================================")
