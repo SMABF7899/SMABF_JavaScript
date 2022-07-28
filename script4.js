@@ -32,7 +32,7 @@ var test = function () {
 console.log(test)
 console.log(test())
 console.log("=========================================================================================================")
-function Car(brand, model, year, speed, color) {
+function Car(brand, model, year, speed) {
     this.brand = brand;
     this.model = model;
     this.year = year;
@@ -93,4 +93,21 @@ console.log(num.constructor)
 
 var status = new Boolean(true);
 console.log(status.constructor)
+console.log("=========================================================================================================")
+var car4 = Object.create(null);
+console.log(car4)
+car3.color = "red";
+car4 = Object.create(null);
+console.log(car4)
+car4.makeHappy = function () {
+    return "Happy"
+};
+var car5 = Object.create(car4);
+console.log(car5.makeHappy());
+car5.color = "Yellow";
+car5.brand = "Ikco";
+car5.model = "405 Taxi"
+car5.year = 1380
+console.log(car5)
+console.log(car5.makeHappy())
 console.log("=========================================================================================================")
