@@ -31,3 +31,33 @@ try {
 } catch (error) {
     console.log(error);
 }
+console.log("=========================================================================================================")
+try {
+    title.addEventListener('click', function () {
+        console.log("Handler 1");
+    });
+    title.addEventListener('click', function () {
+        console.log("Handler 2");
+    });
+    var el1 = document.querySelector('.el1');
+    var el2 = document.querySelector('.el2');
+    el1.addEventListener('click', function (event) {
+        console.log("Element 1");
+    });
+    var el2func = function (event) {
+        event.stopPropagation();
+        console.log("Element 2");
+    };
+    el2.addEventListener('click', el2func);
+    var link = document.getElementById("web");
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        console.log("smabf.ir");
+    });
+    setTimeout(() => {
+        el2.removeEventListener('click', el2func)
+    }, 2000);
+} catch (error) {
+    console.log(error);
+}
+console.log("=========================================================================================================")
